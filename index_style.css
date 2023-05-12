@@ -1,3 +1,6 @@
+.page-style{
+    background-color: lightskyblue;
+}
 .card-img{
     max-width: 200px;
     
@@ -9,8 +12,32 @@
 
 .home-grid{
     text-align: center;
+    background-color: lightskyblue;
 }
 
 .icon{
     max-width: 50px;
 }
+
+.top-of-page{
+    background-color: blanchedalmond;
+}
+
+.fill{
+    min-width: auto;
+}
+
+.lesser-headder{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+.background-text{
+    text-align: center;
+    background-color:cyan;
+    border-color: blue;
+    border-width: 5px;
+    border-radius: 50px;
+    border-style: solid;
+}
+
