@@ -1,3 +1,8 @@
+top-frame {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 body {
     background-color: #2c94a4;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -13,9 +18,16 @@ body {
     padding: 7px;
 }
 
-.home-grid{
+.home-grid-1 {
+    text-align: center;
+    background-color:#2C94A4;
+}
+
+.home-grid-2{
     text-align: center;
     background-color: #2C94A4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .icon{
@@ -28,6 +40,8 @@ body {
     outline-color: blanchedalmond;
     border-radius: 50px;
 }
+
+
 
 .lesser-headder{
     font-weight: bolder;
@@ -77,4 +91,35 @@ body {
     border-width: 5px;
     border-radius: 0px;
     border-style: solid;
+}
+
+.river-card {
+    grid-column: 1/2;
+}
+
+.camping-card {
+    grid-column: 2/3;
+}
+
+.rapids-card {
+    grid-column: 3/4;
+}
+
+.end-card {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.button-top {
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: black;
+    border-radius: 5px;
+    color:gold;
+    background-color: blue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    padding: 8px 5px;
+    margin: 5px;
+    grid-column: 2/3;
 }

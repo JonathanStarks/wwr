@@ -6,8 +6,8 @@ Fonts are separated by a & */
 :root {
   /* change the values below to your colors from your palette */
   --primary-color: #493C15   ;
-  --secondary-color: #3F6600 ;
-  --accent1-color: #027100;
+  --secondary-color: blue ;
+  --accent1-color: darkblue;
   --accent2-color: #2C94A4;
 
   /* change the values below to your chosen font(s) */
@@ -28,6 +28,10 @@ Fonts are separated by a & */
 
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 /*  I changed some stuff... */
+
+main {
+  
+}
 
 body {
   max-width: 960px;
