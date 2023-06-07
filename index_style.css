@@ -1,212 +1,102 @@
-top-frame {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
 body {
-    background-color: #2c94a4;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.card-img{
-    max-width: 200px;
-    background-color: goldenrod;
-    padding: 5px;
-}
-
-.logo{
-    max-width: 50px;
-    padding: 7px;
-}
-
-.home-grid-1 {
     text-align: center;
-    background-color:#2C94A4;
 }
 
-.home-grid-2{
-    text-align: center;
-    background-color: #2C94A4;
+main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-
-.icon{
-    max-width: 50px;
-}
-
-.top-of-page{
-    background-color: blanchedalmond;
-    padding: 20px;
-    outline-color: blanchedalmond;
-    border-radius: 50px;
-}
-
-.lesser-headder{
-    font-weight: bolder;
-        
-}
-
-.background-text{
-    text-align: center;
-    background-color:cyan;
-    border-color: cyan;
-    border-width: 5px;
-    border-radius: 50px;
-    border-style: solid;
-    padding: 15px;
-}
-
-.button {
-    outline-style: solid;
-    outline-width: 2px;
-    outline-color: black;
-    border-radius: 5px;
-    color:gold;
-    background-color: blue;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bold;
-    padding: 8px 5px;
-    margin: 5px;  
-}
-.button:hover{
-    background-color: orange;
-    color: blue;
-}
-
-.social {
-    max-width: 50px;
-    margin: 15px;
-    padding: auto;
-}
-
-.give-it-sone-room {
-    padding: 25px;
-    margin-bottom: 25px;
-}
-
-.foot-style {
-    outline-color: blue;
-    border-width: 5px;
-    border-radius: 0px;
-    border-style: solid;
-}
-
-.river-card {
+.rivers-card {
     grid-column: 1/2;
 }
-
 .camping-card {
     grid-column: 2/3;
 }
-
 .rapids-card {
     grid-column: 3/4;
 }
 
-.end-card {
-    grid-column: 2/3;
-    grid-row: 3/4;
+.msg {
+    background-color: #6f7364;
+    padding: 35px;
+    grid-column: 6/10;
+    grid-row: 6/7;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+.mountains {
+    width: 100%;
+    grid-column: 2/7;
+    grid-row: 5/8;
+    box-shadow: 5px 5px 10px #6f7364;
 }
 
-.button-top {
-    outline-style: solid;
-    outline-width: 2px;
-    outline-color: black;
-    border-radius: 5px;
-    color:gold;
-    background-color: blue;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bold;
-    padding: 8px 5px;
-    margin: 5px;
-    grid-column: 2/3;
+.card-img {
+    border: 10px solid #d9c2a3;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+    width: 250px;
+}
+.card-img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+
+.social {
+    width: 50px;
+    height: 50px;
+}
+
+.icon {
+    max-height: 50px;
+    max-width: 50px;
+}
+footer {
+    background-color: #6f7364;
+    padding: 25px 50px;
+    margin-top: 200px; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 @media screen and (max-width: 900px) {
-    body {
-        background-color: #2c94a4;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    #hero, .home-grid {
+        display: block;
+        height: auto;
     }
-    .card-img{
-        max-width: 200px;
-        background-color: goldenrod;
-        padding: 5px;
+    nav, footer {
+        flex-direction: column;
     }
-    
-    .logo{
-        max-width: 50px;
-        padding: 7px;
-    }
-    
-    .home-grid-1 {
-        text-align: center;
-        background-color:#2C94A4;
-    }
-    
-    .home-grid-2{
-        text-align: center;
-        background-color: #2C94A4;
-    
-    }
-    
-    .icon{
-        max-width: 50px;
-    }
-    
-    .top-of-page{
-        background-color: blanchedalmond;
-        padding: 20px;
-        outline-color: blanchedalmond;
-        border-radius: 50px;
-    }
-    
-    .lesser-headder{
-        font-weight: bolder;
-            
-    }
-    
-    .background-text{
-        text-align: center;
-        background-color:cyan;
-        border-color: cyan;
-        border-width: 5px;
-        border-radius: 50px;
-        border-style: solid;
+    nav a {
+        display: block;
         padding: 15px;
     }
-    
-    .button {
-        outline-style: solid;
-        outline-width: 2px;
-        outline-color: black;
-        border-radius: 5px;
-        color:gold;
-        background-color: blue;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-weight: bold;
-        padding: 8px 5px;
-        margin: 5px;  
+    #hero {
+        margin-top: 0;
     }
-    .button:hover{
-        background-color: orange;
-        color: blue;
+    #hero-msg {
+        margin-top: 0;
     }
-    
-    .social {
-        max-width: 50px;
-        margin: 15px;
-        padding: auto;
+    #hero-msg h4 {
+        display: none;
     }
-    
-    .give-it-sone-room {
-        padding: 25px;
-        margin-bottom: 25px;
+    .home-title {
+        font-size: 25px;
+        color: #6f7364;
     }
-    
-    .foot-style {
-        outline-color: blue;
-        border-width: 5px;
-        border-radius: 0px;
-        border-style: solid;
+    .rivers-card, .camping-card, .rapids-card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
     }
 }
