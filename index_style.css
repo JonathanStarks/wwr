@@ -144,6 +144,7 @@ footer {
     .rivers-card, .camping-card, .rapids-card { 
         margin: 50px auto;
         width: 60%;
+        grid-column: 1/2;
     }
     #background {
         display: none;
