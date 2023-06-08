@@ -66,6 +66,11 @@ header {
     text-decoration: none;
     background-color:burlywood;
     padding: 5px;
+    color: #6f7364;
+}
+.button:hover {
+    background-color:gray;
+    color: darkslategray;
 }
 
 .msg {
