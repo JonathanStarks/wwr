@@ -1,0 +1,49 @@
+body {
+    background-color: #1d1e38;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 1200px;
+    color: #0ea200;
+    padding: 4em;
+    margin: 0 auto;
+}
+
+.text-background {
+    margin: 0 auto;
+    padding: 1em;
+    background-color: #4e4e4e;
+    text-align: center;
+}
+
+hr {
+    height: 3px;
+    margin: 35px 0;
+    background: #cad500;
+}
+
+nav {
+    background-color: #cad500;
+    line-height: 3em;
+    text-align: center;
+    font-size: 1.2em;
+    color: #1d1e38;
+}
+nav  {
+    list-style-type: none;
+    display: flex;
+  
+}
+nav a {
+  padding:1em;
+  min-width: 120px;
+  text-decoration: none;
+  padding: 10px;
+
+}
+nav a:link, nav a:visited {
+  color: #1d1e38;
+}
+nav a:hover {
+    color: #0ea200;
+    background-color: #4e4e4e;
+}
