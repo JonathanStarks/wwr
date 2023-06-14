@@ -1,0 +1,34 @@
+body {
+    background-color: #1d1e38;
+    font-weight: bold;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4em;
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    padding: 10px;
+    background-color: #cad500;
+    min-height: 100px;
+}
+
+.site-logo {
+    max-width: 100px;
+    float: left;
+}
+
+.button-1-style {
+    padding: 5px;
+    outline-color: black;
+    border: 2px solid black;
+    text-decoration: none;
+    min-height: 50px;
+}
+.button-1-style:hover {
+    outline-color: black;
+    background-color: #4e4e4e;
+    color:#0ea200;
+}
