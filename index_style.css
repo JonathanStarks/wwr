@@ -18,6 +18,13 @@ header {
     
 }
 
+.gear {
+    background-color:#d9c2a3 ;
+    width: max-content;
+    margin: 5px auto;
+    padding: 5px;
+}
+
 .icon-1 {
     width: 75px;
     grid-column: 1/2;
@@ -116,6 +123,13 @@ footer {
     align-items: center;
 }
 
+picture-and-words {
+    justify-content: space-around;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 720px 720px;
+}
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
@@ -158,5 +172,29 @@ footer {
         margin-top: 25px;
     }
 
+    picture-and-words {
+        margin: 0 auto;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 
+    .gear {
+        background-color:#d9c2a3 ;
+        width: max-content;
+        margin: 5px auto;
+        padding: 5px;
+        font-size: medium;
+    }
+
+    .contact-div {
+        padding: 50px;
+        margin: 0 auto;
+        max-width: 70%;
+
+    }
+
+    .make-it-fit {
+        max-width: 100%;
+    }
 }
