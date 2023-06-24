@@ -18,24 +18,63 @@ header {
 
 nav {
     display: grid;
-    grid-template-columns: 100px 100px 100px;
-    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1em 1em 1em 1em 1em;
     justify-content:center;
+    outline: black solid 2px;
 }
 
-center {
-    max-width: 700px;
+
+.body-text1 {
+    max-width: 1200px;
     text-align: center;
     margin: 0 auto;
     background-color: #4e4e4e;
     font-size: larger;
+    padding: 10px;
+    grid-column: 1/2;
+}
+
+.body-text2 {
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #4e4e4e;
+    font-size: larger;
+    padding: 10px;
+    grid-column: 2/3;
+}
+
+.small-pic1 {
+    max-width: 400px;
+    grid-column: 2/3;
+}
+
+.small-pic2 {
+    max-width: 400px;
+    grid-column: 1/2;
+}
+
+.middle-bottom {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.middle-top {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 0 auto;
+    padding: 10px;
 }
 
 footer {
     margin: 2px auto;
     padding: 25px 50px;
-    background-color: #4e4e4e;
+    background-color: #cad500;
     justify-content: space-around;
+    color: #1d1e38;
 }
 
 .site-logo {
@@ -43,13 +82,95 @@ footer {
     float: left;
 }
 
-.button-1, .button-2, .button-3 {
+.button1, .button2, .button3{
     text-align: center;
-    border: 2px solid black;
     text-decoration: none;
-    
+    margin: 0 auto;
 }
-.button-1:hover, .button-2:hover, .button-3:hover {
+.button1:hover, .button2:hover, .button3:hover{
     background-color: #4e4e4e;
     color:#0ea200;
+}
+
+.contact-body {
+    display: grid;
+    grid-template-columns: 400px 800px;
+    grid-template-rows: 310px 310px;
+    
+}
+
+.contact-pic1 {
+    max-width: 300px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.contact-pic2 {
+    max-width: 300px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.contact-par {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #4e4e4e;
+    font-size: larger;
+    padding: 10px;
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+
+.buy-now-par {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #4e4e4e;
+    font-size: larger;
+    padding: 10px;
+}
+
+.buy-now-lower {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.buy-now-pic1 {
+    max-width: 400px;
+    grid-column: 1/2;
+    grid-row: 1/4;
+}
+
+.buy-button {
+    outline: #cad500 dotted 5px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: #4e4e4e;
+    color: #1f9a00;
+    margin: 5px auto;
+    max-height:30px;
+    margin-top: 40px;
+}
+.buy-button:hover {
+    color: #1d1e38;
+    background-color: #cad500;
+    outline-color: #1f9a00;
+}
+
+.buy-button-background {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: darkred;
+    outline: #55d500 dotted 4px;
+    border-width: 250px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.buy-now-pic2 {
+    max-width: 400px;
+    grid-column: 3/4;
+    grid-row: 1/4;
 }
